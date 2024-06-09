@@ -5,47 +5,286 @@
     justify-content: center;
     display: flex;
     margin:  auto;
-    padding: 10vw;
+    padding: 10%;
+    height: max-content;
+    overflow: hidden;
 }
 
 .secondContainer {
-    max-width: 100%;
-    width: 250px;
+    max-width: 25%;
+    width: 500px;
     margin: 0 auto;
     background-color: hsl(0, 0%, 100%);
     padding: 15px;
     border-radius: 20px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
-    /* aspect-ratio: 100/50; */
 }
 
 .secondContainer img {
     max-width: 100%;
-    width: 25vw;
+    width: 100%;
     height: auto;
     display: block;
     border-radius: inherit;
     margin: 0 auto;
 }
 
-.thirdContainer {
-    text-wrap: pretty;
-    width: inherit;
-}
 .firstText {
     padding: auto;
     font-weight: 700;
     font-family: Outfit;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 .secondText {
-    /* font-size: medium !important; */
     font-weight: 400;
     font-family: Outfit;
     color: hsl(220, 15%, 55%);
-    font-size: .7vw;
-    text-wrap: pretty;
-    padding-left: 10px;
-    padding-right: 15px;
+    font-size: 1vw;
+    padding-left: 5px;
+    padding-right: 10px;
 }
+
+.deleteAfter {
+
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+    width: max-content;
+    text-wrap: pretty;
+    padding: 30px;
+}
+
+.filler {
+    font-size: large;
+    font-weight: 100;
+    border: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+
+li::marker {
+    color: blue;
+    font-weight: bold;
+}
+
+::selection {
+    background: purple;
+    color: white;
+}
+
+a.cool {
+    background-color: #000;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+}
+
+button {
+    background-color: #00000080;
+    border-radius: 10px;
+}
+
+button[onclick] {
+    background-color: white;
+}
+
+.bgcool {
+    border-color: black;
+    outline-color: aqua;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(#77bcdc, #4b6584);
+    border: 2px solid;
+    border-top-color:#4b6584;
+    border-left-color: #4b6584;
+    border-right-color: lightsteelblue;
+    border-bottom-color: lightsteelblue;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+
+/* Correct css used for QR code */
+
+.bigContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* width: 100%; */
+    height: 100vh; 
+    background-color: hsl(212, 45%, 89%);
+}
+
+.mainContent {
+    background-color: white;
+    padding: 1.5vw;
+    border-radius: 10px;
+    width: 20vw;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.02);
+}
+
+.imgstyle {
+    width: 100%;
+    border-radius: 9px;
+}
+
+.fText {
+    font-weight: 700;
+    font-size: 1.5vw;
+    text-wrap: pretty;
+    font-family: Outfit;
+    line-height: z;
+    padding-bottom: 0%;
+}
+
+.sText {
+    font-family: Outfit;
+    padding: .5vw;
+    font-weight: 00;
+    font-size: 1vw;
+    text-wrap: pretty;
+    color: gray;
+    padding-top: 0%;
+}
+
+.secCnt {
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+@media(max-width: 900px) {
+    .container {
+        width: 500px;
+        height: 50vw;
+    }
+}
+
+/* QR css ends here */
+
+.my-element {
+    display: grid;
+    background-color: #000;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    max-width: 900px;
+}
+
+.my-element:first-child {
+    grid-row: 1/3;
+    grid-column: 1/4;
+}
+
+
+.customFlow {
+    display: inline-block;
+    background-color: white;
+    margin-top: .1rem;
+    margin-bottom:.1rem;
+}
+.floatImg {
+    float: left;
+    margin-inline-end: 1rem;
+}
+
+.anotherdiv {
+    display:flex;
+    flex-wrap:wrap-reverse;
+}
+
+.countries {
+    width: 100%;
+    column-width: 260px;
+    column-gap: 2rem;
+    ::marker{
+        color: transparent;
+    }
+}
+
+.child-element {
+    /* width: 100%;
+    height: auto; */
+    background-color: #4b6584;
+}
+
+.mainPage {
+    width: 900px;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+}
+
+.firstLChild {
+    align-self: flex-end;
+    height: 20px;
+    background: lightsteelblue;
+}
+
+.gridContainer {
+    display: grid;
+    grid-auto-flow: dense;
+    gap: 10px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "header header header header"
+        "sidebar content content content"
+        "sidebar footer footer footer";
+    
+}
+
+.item {
+    background-color: lightblue;
+    
+}
+
+.anItem {
+    background-color: lightgrey;
+    border: 1px black solid;
+}
+
+.rectangle {
+    width: 900px;
+    height:400px;
+    background-color: lime;
+    z-index: 1;
+}
+
+.square {
+    width: 200px;
+    height: 500px;
+    background: lightpink;
+    z-index: 2; /*Used to stack items*/
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.header {
+    grid-area: header;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}
+

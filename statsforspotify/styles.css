@@ -1,0 +1,71 @@
+.specialIcon {
+    background-color: black;
+    height: 1vw;    
+}
+
+.nav {
+    display: flex;
+    gap: 2vw;
+    padding-top: 1vw;
+    padding-bottom: .5vw;
+    padding-left: 10vw;
+    align-items: center;
+}
+
+.nav span {
+    color: rgb(197, 197, 197);
+    font-family: Inter;
+}
+
+.aHome {
+    font-size: 16px;
+    display: flex;
+    font-family: Inter;
+    text-decoration: none;
+    color: white;
+    font-weight: semibold;
+    gap: .2vw;
+    
+}
+
+.aLinks {
+    font-family: Inter;
+    
+}
+
+.aSettings {
+    font-family: Inter;
+    margin-left: auto;
+    padding-right: 11vw;
+}
+
+/* footer css */
+.footer {
+    color: lightgray;
+    padding-left: 6vw;
+    display: grid;
+    font-family: Inter;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 12px;
+    padding-left: 10vw;
+    padding-right: 11vw;
+}
+
+.footer a {
+    text-decoration: underline;
+    font-family: Inter;
+    color: lightblue;
+    display: flex;
+    justify-content: end;
+}
+
+
+/* test html css */
+.navigation {
+}
+
+.navSpan {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
