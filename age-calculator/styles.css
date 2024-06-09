@@ -39,7 +39,10 @@
     justify-content: center;
     align-items: center;
     justify-self: center;
-    
+    border: .5px solid #808080;
+    width: 100%;
+    max-width: 30vw;
+    padding: .5vw;
     
 }
 
